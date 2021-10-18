@@ -1,0 +1,21 @@
+body {
+    background: black;
+}
+
+h1 {
+    text-shadow: none;
+    animation: pulse 2s steps(1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        color: #04bf04;
+    }
+    50% {
+        color: #fffb00;
+    }
+  }
+
+* {
+    border-radius: 0!important;
+}
