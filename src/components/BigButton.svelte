@@ -19,17 +19,17 @@
     }
 
     button {
-        color: white;
-    border: none;
-    border-radius: 100%;
-    width: 100px;
-            height: 100px;
-            font-size: 15px;
-    position: fixed;
-    top: 420px;
-    transition: .6s cubic-bezier(.75,-0.5,0,1.75);
-    z-index: 100;
-    font-weight: 900;
+        color: #fff;
+        border: none;
+        border-radius: 100%;
+        width: 30vw;
+        height: 30vw;
+        font-size: 6vw;
+        position: fixed;
+        bottom: 10vh;
+        transition: .6s cubic-bezier(.75,-0.5,0,1.75);
+        z-index: 100;
+        font-weight: 900;
     }
 
     button#black {
@@ -51,15 +51,9 @@
     } 
 
     button.trans {
-        top: 200%;
+        bottom: -40vh;
     }
 
-    @media (min-width: 414px) {
-        button {
-            top: 480px;
-        }
-
-    }
 
     @media (min-width:768px) {
         button {
@@ -68,6 +62,7 @@
             font-size: 25px;
             top: initial;
             bottom: 100px;
+            right: 25vw;
         }
 
         button#magenta {

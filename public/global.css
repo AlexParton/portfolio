@@ -6,17 +6,15 @@
 }
 
 :root {
-	--Vpadding: 20px;
-	--Hpadding: 20px;
+	--Vpadding: 8vw;
+	--Hpadding: 4vw;
 	--padding: var(--Vpadding) var(--Hpadding);
 	--grey: #f2f4f2;
 	--black: #333;
-	--top: 35px;
+	--top: 12vw;
 }
 
 body {
-	margin: 0;
-	/* font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 	font-family: 'Inconsolata', monospace;
 	font-size: 14px;
 	line-height: 1.5;
@@ -24,10 +22,9 @@ body {
 }
 
 h1 {
-	font-size: 3em;
-	text-shadow: -11px 7px 1px #bdbdbd7a;
-	line-height: 25px;
-    margin: 20px 0 20px;
+	font-size: 12vw;
+    text-shadow: -11px 7px 1px #bdbdbd7a;
+    line-height: 1.2;
 }
 
 a {
@@ -53,12 +50,10 @@ button {
 
 	h1 {
 		font-size: 4em;
-		line-height: 30px;
 	}
 	
 	h2 {
 		font-size: 3em;
-		line-height: 20px;
 	}
 	h3 {
 		font-size: 2em;
@@ -70,10 +65,11 @@ button {
 	
 }
 
-@media (min-width: 935px) {
+@media (min-width: 1000px) {
 	:root {
 		--Vpadding: 60px;
 		--Hpadding: 16%;
+		--top: 60px;
 	}
 
 	button, a, select, nav li {
@@ -81,13 +77,9 @@ button {
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 	:root {
 		--Vpadding: 60px;
 		--Hpadding: 20%;
-	}
-
-	h2 {
-		line-height: 40px;
 	}
 }

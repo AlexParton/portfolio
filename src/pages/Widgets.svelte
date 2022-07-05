@@ -83,6 +83,7 @@ const changeCamera = (event) => {
         background: #2b2b2b;
         color: #fff;
         cursor: pointer;
+        font-size: 20px;
     }
 
 @media(min-width: 768px) {

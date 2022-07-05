@@ -43,12 +43,12 @@ const operatorHandler = (operator) => {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 97%;
     border-radius: 10px;
-    border: 1px solid black;
-    margin: 20px auto;
+    border: 1px solid #acacac;
+    margin: 8vw auto 0;
     background: #e2e2e2;
-    padding: 10px;
+    padding: 2vw;
 }
 
 .calculator ul {
@@ -68,8 +68,10 @@ const operatorHandler = (operator) => {
 }
 
 .calculator-screen p {
-    padding: 0 10px 0 0;
-    font-size: 20px;
+    padding: 0 1vw;
+    font-size: 5vw;
+    text-align: center;
+    width: 100%;
 }
 
 .controls {

@@ -70,8 +70,8 @@ let testing = ''
 </script>
 <style>
     .myname {
-        font-size: 16px;
-        max-width: 125px;
+        font-size: 5vw;
+        max-width: 50%;
     }
 
     nav {
@@ -85,7 +85,7 @@ let testing = ''
         padding: 0 var(--Hpadding);
         background: #151515;
         width: 100%;
-        color: white;
+        color: #fff;
     }
 
     nav ul {
@@ -93,10 +93,12 @@ let testing = ''
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        width: 100%;
+        gap: 3vw;
     }
 
     nav ul li {
-        margin: 0 20px 0 0;
+        font-size: 4vw;
     }
 
     nav ul li:nth-child(2) {
@@ -113,14 +115,23 @@ let testing = ''
         text-decoration: underline;
     }
 
+    nav ul li:nth-child(5) {
+        width: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: right;
+    }
+
     nav ul li img {
         filter: invert(1);
-        width: 15px;
+        max-width: calc(var(--top) / 2);
         position: absolute;
         top: 0;
         bottom: 0;
         margin: auto;
-        right: 15px;
+        right: var(--Hpadding);
+        width: 90%;
     }
 
     @media (min-width:768px) {
@@ -130,17 +141,19 @@ let testing = ''
             padding: 10px 0;
         }
 
+
+        nav ul li img {
+            width: 25px;
+        }
+    }
+
+    @media (min-width:1000px) {
         nav {
-            font-size: 22px;
+            gap: 15px
         }
 
         nav ul li {
-            margin: 0 30px 0 0;
-        }
-
-        nav ul li img {
-            right: var(--Hpadding);
-            width: 25px;
+            font-size: 20px;
         }
     }
 </style>
@@ -218,8 +231,8 @@ let testing = ''
     {#if page === 'home'}
         <Header />
         <TextWrapper>
-            <h1>hola</h1>
-            <p class='myname'>my name is alex and i'm a web & app developer.</p>
+            <h1>hola!</h1>
+            <p class='myname'>Please, click that button to start the tour.</p>
         </TextWrapper>
     {/if}
 

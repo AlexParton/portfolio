@@ -35,6 +35,7 @@ main {
 203deg
 ) blur(3px);
 overflow: hidden;
+top: calc(4 * var(--top));
 }
 video {
     height: 100vh;
@@ -49,6 +50,10 @@ video {
     background: black;
     height: 60px;
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    align-items: center;
 }
 
 .selector {
@@ -56,6 +61,7 @@ video {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .selector span:nth-child(1), .selector.right span:nth-child(3) {
@@ -106,6 +112,7 @@ video {
 .demo-body {
     padding:var(--padding);
     text-align: center;
+    padding-bottom: calc(3 * var(--Vpadding));
 }
 
 .demo-layout.backend {
@@ -115,7 +122,7 @@ video {
 }
 
 .card {
-    margin: 15px 0;
+    margin: 4vw 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,18 +164,18 @@ video {
 
 @media(min-width: 768px) {
     .selector {
-        max-width: 400px;
-    margin: auto;
-    font-size: 22px;
-    width: 100%;
+        max-width: 440px;
+        margin: auto;
+        font-size: 22px;
+        width: 100%;
     }
 
     .header {
         padding: 0;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        height: var(--top);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .demo-layout {
@@ -199,10 +206,24 @@ video {
         height: 23px;
     }
 }
-@media(min-width:935px) {
+@media(min-width:1000px) {
+    .video-container {
+        top: 0;
+    }
+    video {
+        width: auto;
+        height: 100vh;
+    }
+
+    .card {
+        padding: 30px;
+    }
+}
+
+@media(min-width:1240px) {
     video {
         width: 100%;
-    height: auto;
+        height: auto;
     }
 }
 

@@ -71,6 +71,7 @@ p.disclaimer {
     left: 0;
     bottom: 0;
     cursor: pointer;
+    font-size: 20px;
     }
 
 @media (min-width: 768px) {

@@ -1,0 +1,11 @@
+body {
+    background: #ff57b2;
+}
+
+h1 {
+    text-shadow: -11px 7px 1px #ff249b;
+}
+
+* {
+    color: pink!important;
+}

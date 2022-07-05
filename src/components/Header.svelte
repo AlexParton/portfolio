@@ -4,40 +4,43 @@
 
 <style>
 
-    header {
-        padding: var(--padding);
-        margin: 35px 0 0 0;
-    }
+header {
+    padding: var(--padding);
+    margin: var(--top) 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .img-container {
-    width: 140px;
-    height: 140px;
+    width: 40vw;
+    height: 40vw;
     border-radius: 100%;
     overflow: hidden;
-    margin: 0 0 0 20px;
-    float: left;
-    shape-outside: border-box;
 }
 
 .text {
-    margin: 50px 0 0;
+    margin: 12vw 0 0;
+    width: calc(100% - 40vw);
 }
 
 .text p {
-    line-height: 20px;
+    line-height:1.2;
     font-weight: 300;
 
 }
 
 .text p:nth-child(1){
-    font-size: 23px;
+    font-size: 6vw;
     font-weight: 600;
 }
 .text p:nth-child(2){
-    font-size: 17px;
+    font-size: 6vw;
+    line-height: 1;
 }
 .text p:nth-child(3){
-    font-size: 13px;
+    font-size: 3vw;
     font-weight: 200;
+    padding: 1vw 0 0;
 }
 .text p:nth-child(4){
     font-size: 11px;
@@ -47,44 +50,32 @@
 
 img {
     filter: grayscale(1) brightness(1.4);
-    width: 140px;
-    height: 140px;
+    width: 100%;
+    height: 100%;
 }
 
 @media (min-width: 768px) {
-    .img-container {
-        width: 250px;
-        height: 250px;
-        margin: 0 0 0 10%;
-    }
 
-    img {
-        width: 250px;
-        height: 250px;
+    .img-container {
+        max-width: 250px;
+        max-height: 250px;
     }
     .text {
-        margin: 96px 0 0;
-    }
-    .text p:nth-child(1){
-        font-size: 46px;
-        line-height: 46px;
+        margin: 10vw 0 0;
+        width: calc(100% - 250px);
     }
     .text p:nth-child(2){
         font-size: 32px;
-    line-height: 32px;
     }
     .text p:nth-child(3){
         font-size: 24px;
-    line-height: 24px;
+        line-height: 24px;
     }
+}
 
-    .text p:nth-child(4) {
-        font-size: 19px;
-        line-height: 28px;
-    }
-    
-    header {
-        margin-top: 80px;
+@media (min-width: 1000px) {
+    .text {
+        margin: 50px 0 0;
     }
 }
 </style>
@@ -95,9 +86,8 @@ img {
     </div>
     <div class="text">
         <p>alex parton</p>
-        <p>f‧e developer</p>
+        <p>web & app developer</p>
         <p>madrid, spain</p>
-        <p>25 april 1978</p>
     </div>
     
 </header>

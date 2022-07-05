@@ -266,7 +266,11 @@ img.result {
       }
 
       .weapon-container {
-          width: 190px;
+        width: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
       }
 
       .weaponery {
@@ -282,8 +286,21 @@ img.result {
       .arena h2 {
         max-width: 400px;
         cursor: pointer;
+        height: 50px;
+        font-size: 22px;
+        margin-bottom: 0;
       }
   } 
+
+  @media (min-width:1000px) {
+    .starter {
+        width: 250px;
+        height: 250px;
+        font-size: 25px;
+        box-shadow: 0 0 11px #ff00e15e;
+        border: none;
+    }
+  }
 </style>
 
 <div class={`rps-wrapper ${togglerMode}`}>

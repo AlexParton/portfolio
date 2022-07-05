@@ -19,23 +19,30 @@
 
     .social-item {
         display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    margin: 25px 0;
-    border: 1px dotted;
-    border-radius: 25px;
-    padding: 5px 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        margin: 5vw 0;
+        border: 1px dotted;
+        border-radius: 25px;
+        padding: 0 4vw;
+        height: 12vw;
+        gap: 2vw;
     }
 
     .social-item img {
-        width: 30px;
+        width: 10%;
+        max-width: 25px;
     }
 
     .social-item h3 {
-        width: calc(100% - 40px);
-        font-size: 15px;
+        width: calc(90% - 2vw);
+        font-size: 4vw;
+    }
+
+    .spacer {
+        margin: 5vw 0;
     }
 
     @media(min-width:768px) {
@@ -50,11 +57,20 @@
 
         .social-item {
             width: 350px;
-    padding: 10px 20px;
+            padding: 10px 20px;
+            margin: 20px 0;
+            gap: 10px;
+            height: 50px;
         }
 
         .social-item h3 {
             font-size: 16px;
+        }
+    }
+
+    @media(min-width:1000px) {
+        .social-item:hover {
+            border: 1px solid black;
         }
     }
     </style>
@@ -62,17 +78,20 @@
     <div class="contact-wrapper">
         <div class='h1-wrapper'>
             <h1>MAKE CONTACT</h1>
-            <p>Thanks for getting this far.</p>
-            <p>I hope you have enjoyed my portfolio site.</p>
-            <p>If you want to get in touch you can reach me at:</p>
+            <div class="spacer">
+                <p>Thanks for getting this far.</p>
+                <p>I hope you have enjoyed my portfolio site.</p>
+                <p>If you want to get in touch you can reach me at:</p>
+            </div>
+           
             <div class="social">
-                <a href="https://twitter.com/hair_none" class="social-item">
-                    <img src="assets/logos/logo-twitter.svg" alt="twitter">
-                    <h3>{'.hair{display:none}'} <span>@ Twitter</span></h3>
+                <a href="mailto:alexpartondev@gmail.com?subject=Making Contact!" target="_blank" class="social-item">
+                    <img src="assets/logos/email.svg" alt="email">
+                    <h3>alexpartondev@gmail.com</h3>
                 </a>
-                <a href="https://linkedin.com/in/alejandro-morales-6b571612a" class="social-item">
-                    <img src="assets/logos/logo-linkedin.svg" alt="twitter">
-                    <h3>Alejandro Morales <span>@ LinkedIn</span></h3>
+                <a href="https://linkedin.com/in/alejandro-morales-6b571612a" target="_blank" class="social-item">
+                    <img src="assets/logos/logo-linkedin.svg" alt="linkedin">
+                    <h3>Alejandro Morales</h3>
                 </a>
             </div>
         </div>

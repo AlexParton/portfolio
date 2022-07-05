@@ -115,9 +115,23 @@
     }
 }
 
-@media(min-width: 935px) {
+@media(min-width: 1000px) {
     .toggler {
         cursor: pointer;
+    }
+
+    .modeselektor {
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .modeselektor h2 {
+        margin: 0;
+        font-size: 26px;
+    }
+
+    .selector-item p{
+        font-size: 18px;
     }
 }
 </style>

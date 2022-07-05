@@ -1,0 +1,34 @@
+{
+    "name": "AlexPartonPortfolio",
+    "short_name": "AlexPartonPortfolio",
+    "theme_color": "#151515",
+    "background_color": "#fff",
+    "display": "minimal-ui",
+    "orientation": "portrait-primary",
+    "Scope": "/",
+    "start_url": "/",
+    "description": "Gestiona las cajas de tu mudanza",
+    "dir": "ltr",
+    "lang": "es-ES",
+    "icons": [
+    {
+    "src": "assets/icon-64x64.png",
+    "sizes": "64x64",
+    "type": "image/png",
+    "purpose": "any maskable"
+    },
+    {
+    "src": "assets/icon-128x128.png",
+    "sizes": "128x128",
+    "type": "image/png",
+    "purpose": "any maskable"
+    },
+    {
+    "src": "assets/icon-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any maskable"
+    }
+    ],
+    "splash_pages": null
+    }

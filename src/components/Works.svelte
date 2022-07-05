@@ -25,6 +25,7 @@ onDestroy(() => {
         background: #2b2b2b;
         color: #fff;
         cursor: pointer;
+        font-size: 20px;
     }
 
     @media(min-width: 768px) {
@@ -39,6 +40,7 @@ onDestroy(() => {
 <div class="works-wrapper">
     <div class='h1-wrapper'>
         <h1>WORKS</h1>
+        <p>some of my latest personal works</p>
     </div>
     {#each WorkData as work }
         <Work {work}/>
